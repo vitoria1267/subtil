@@ -1,0 +1,150 @@
+/* ===========================
+   Configuração geral da página
+   =========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:#f2f2f2;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    height:100vh;
+
+}
+
+h1{
+
+    margin-bottom:40px;
+
+}
+
+/* ===========================
+   Container do Flashcard
+   =========================== */
+
+.flashcard{
+
+    width:280px;
+
+    height:180px;
+
+    perspective:1000px;
+
+}
+
+/* ===========================
+   Cartão
+   =========================== */
+
+.card{
+
+    position:relative;
+
+    width:100%;
+
+    height:100%;
+
+    transition:transform .8s;
+
+    transform-style:preserve-3d;
+
+}
+
+/* ===========================
+   Efeito ao passar o mouse
+   =========================== */
+
+.flashcard:hover .card{
+
+    transform:rotateY(180deg);
+
+}
+
+/* ===========================
+   Frente e Verso
+   =========================== */
+
+.frente,
+.verso{
+
+    position:absolute;
+
+    width:100%;
+
+    height:100%;
+
+    border-radius:15px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:20px;
+
+    box-shadow:0 6px 15px rgba(0,0,0,.2);
+
+    backface-visibility:hidden;
+
+}
+
+/* ===========================
+   Frente
+   =========================== */
+
+.frente{
+
+    background:#2196F3;
+
+    color:white;
+
+}
+
+/* ===========================
+   Verso
+   =========================== */
+
+.verso{
+
+    background:#4CAF50;
+
+    color:white;
+
+    transform:rotateY(180deg);
+
+}
+
+.frente h2,
+.verso h2{
+
+    margin-bottom:15px;
+
+}
+
+.frente p,
+.verso p{
+
+    font-size:18px;
+
+    line-height:1.4;
+
+}
