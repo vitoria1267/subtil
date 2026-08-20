@@ -1,0 +1,112 @@
+/* Centraliza o flashcard na tela */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Container que define a perspectiva 3D */
+.flashcard-container {
+    display: flex; /* Transforma o container em um alinhador flexível */
+    justify-content: space-between; /* Distribui o espaço entre as divs */
+    gap: 35px; /* Define um espaçamento de 15px entre as divs */
+    width: 750px;
+    height: 400px;
+}
+
+.cartao1, .cartao2, .cartao3 {
+    width: 350px;
+    height: 400px;
+}
+
+/* Estrutura do card e configuração da animação */
+.flashcard, .flashcard2, .flashcard3 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.8s ease;
+    transform-style: preserve-3d;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+img {
+    opacity: 0.5;
+}
+
+/* Roda o card 180 graus quando passa o mouse*/
+
+.cartao1:hover .flashcard, .cartao2:hover .flashcard2, .cartao3:hover .flashcard3  {
+    transform: rotateY(180deg);
+}
+
+
+/* Estilização básica da Frente e do Verso */
+.front, .back, .front2, .back2 , .front3, .back3 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Cores e detalhes da frente */
+.front {
+    text-align: center;
+    background-color: blue;
+    color: white;
+}
+
+.front2 {
+    text-align: center;
+    background-color: red;
+    color: white;
+}
+
+.front3 {
+    text-align: center;
+    background-color: orange;
+    color: white;
+}
+
+
+/* Cores e detalhes do verso */
+.back {
+    background-color: lightblue;
+    color: #333;
+    transform: rotateY(180deg);
+}
+
+/* Cores e detalhes do verso */
+.back2 {
+    background-color: pink;
+    color: #333;
+    transform: rotateY(180deg);
+}
+
+/* Cores e detalhes do verso */
+.back3 {
+    background-color: yellow;
+    color: #333;
+    transform: rotateY(180deg);
+}
+
+p {
+    text-align: center;
+    font-size: 1.1em;
+}
