@@ -37,7 +37,7 @@ header{
     justify-content:space-between; /* Título à esquerda e botões à direita */
     align-items:center;            /* Alinha verticalmente */
 
-    background: "#9b5bb5";
+    background: #9b5bb5;
     /* Cor azul do fundo do cabeçalho. */
 
     color:white;
