@@ -268,9 +268,9 @@ function trocarImagem(escolha) {
           break;
         default:
           urlNova = 'acessibilidade.png';
-          textoprincipal.innerText="O que é Acessibilidade?";
-          texto.innerText="        A acessibilidade digital permite que qualquer        pessoa utilize sistemas computacionais        independentemente de suas limitações.";
-          descrevefigura.innerText="Figura 1 - Pessoa utilizando computador com tecnologia assistiva. ";
+          textoprincipal.innerText="O que é um multiverso?";
+          texto.innerText="     um multiverso é tu so que reverso  .";
+          descrevefigura.innerText="Figura 1 - exemplo do que é um multiverso. ";
           break;
         }
     imagemnova.src = urlNova;
