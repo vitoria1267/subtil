@@ -2,28 +2,164 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+     <!-- Torna a página responsiva-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flashcard Frente e Verso</title>
+    <title>Programação Inclusiva</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Flashcards</h1>
-    <div class="container">
-        <!-- Flashcard 1 -->
-        <div class="flashcard">
-            <div class="card">
-                <div class="frente">
-                    <h2>Pergunta</h2>
-                    <p>O que é HTML?</p>
-                </div>
-                <div class="verso">
-                    <h2>Resposta</h2>
-                    <p>
-                        HTML é a linguagem responsável pela estrutura das páginas da Web.
-                    </p>
-                </div>
-            </div>
+<header>
+    <h1 tabindex="1">Computação Inclusiva</h1>
+<nav>
+    <!-- Botão para recarregar a página principal. -->
+   <button id="inicial" tabindex="2" onclick="window.location.href='index.html'">
+        Inicial
+    </button>
+
+    <!-- Botão para aumentar o tamanho da fonte. -->
+   <button id="fonteMais" tabindex="3">
+        A+
+    </button>
+
+ <!-- Botão para diminuir o tamanho da fonte. -->
+    <button id="fonteMenos" tabindex="4">
+        A-
+    </button>
+
+<!-- Botão que ativa ou desativa o modo de alto contraste-->
+    <button id="contraste" tabindex="5">
+        Alto Contraste
+    </button>
+
+ <!-- Botão que altera a página para o modo escuro para -->
+   <button id="escuro" tabindex="6">
+        Modo Escuro
+    </button>
+
+ <!-- Botão para ler o conteúdo da página em voz alta. -->
+        <button id="ler" onclick="lerPagina()" tabindex="7">🔊 Ler Página</button>
+
+ <!-- Botão para parar de ler o conteúdo da página em voz alta. -->
+        <button onclick="pararLeitura()" tabindex="8">⏹ Parar</button>
+
+</nav>
+
+</header>
+
+<main>
+
+<!-- Coluna da Esquerda -->
+<section class="lado-esquerdo">
+<section class="coluna">
+    <h2 tabindex="9" id="textoprincipal">O que é Acessibilidade?</h2>
+    <p id="texto" tabindex="10">
+        A acessibilidade digital permite que qualquer
+        pessoa utilize sistemas computacionais
+        independentemente de suas limitações.
+    </p>
+    <img id="imagemPrincipal" src="acessibilidade.png" alt="Pessoa utilizando computador com tecnologia assistiva" tabindex="11">
+    <figcaption tabindex="12">
+<p id="descrevefigura">        Figura 1 - Pessoa utilizando computador com tecnologia assistiva.</p>
+    </figcaption>
+
+</section>
+</section>
+
+<!-- Coluna da Direita -->
+<section class="lado-direito">
+<section class="coluna">
+
+<div class="container-cards">
+
+    <div class="flashcard" onkeydown="trocarImagem('1')" onclick="trocarImagem('1')" tabindex="13">
+        <div class="card">
+            <div class="frente">O SOL</div>
+            <div class="verso">Clique para abrir</div>
         </div>
     </div>
+
+    <div class="flashcard" onkeydown="trocarImagem('2')" onclick="trocarImagem('2')" tabindex="14">
+        <div class="card">
+            <div class="frente">A cor do Sol</div>
+            <div class="verso">Clique para abrir</div>
+        </div>
+    </div>
+
+    <div class="flashcard" onkeydown="trocarImagem('3')" onclick="trocarImagem('3')" tabindex="15">
+        <div class="card">
+            <div class="frente">Flashcard 3</div>
+            <div class="verso">Clique para abrir</div>
+        </div>
+    </div>
+
+    <div class="flashcard" onkeydown="trocarImagem('4')" onclick="trocarImagem('4')" tabindex="16">
+        <div class="card">
+            <div class="frente">Flashcard 4</div>
+            <div class="verso">Clique para abrir</div>
+        </div>
+    </div>
+
+    <div class="flashcard" onkeydown="trocarImagem('5')" onclick="trocarImagem('5')" tabindex="17">
+        <div class="card">
+            <div class="frente">Flashcard 5</div>
+            <div class="verso">Clique para abrir</div>
+        </div>
+    </div>
+
+    <div class="flashcard" onkeydown="trocarImagem('6')" onclick="trocarImagem('6')" tabindex="18">
+        <div class="card">
+            <div class="frente">Flashcard 6</div>
+            <div class="verso">Clique para abrir</div>
+        </div>
+    </div>
+
+    <div class="flashcard" onkeydown="trocarImagem('7')" onclick="trocarImagem('7')" tabindex="19">
+        <div class="card">
+            <div class="frente">Flashcard 7</div>
+            <div class="verso">Clique para abrir</div>
+        </div>
+    </div>
+
+    <div class="flashcard" onkeydown="trocarImagem('8')" onclick="trocarImagem('8')" tabindex="20">
+        <div class="card">
+            <div class="frente">Flashcard 8</div>
+            <div class="verso">Clique para abrir</div>
+        </div>
+    </div>
+
+    <div class="flashcard" onkeydown="trocarImagem('9')" onclick="trocarImagem('9')" tabindex="21">
+        <div class="card">
+            <div class="frente">Flashcard 9</div>
+            <div class="verso">Clique para abrir</div>
+        </div>
+    </div>
+
+</div>
+
+</section>
+</section>
+
+</main>
+
+<footer tabindex="22">
+    Desenvolvido na Aula de Programação Web.
+</footer>
+
+  <div class="Libras">
+  <div vw class="enabled" tabindex="23">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
 </body>
 </html>
