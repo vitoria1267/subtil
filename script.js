@@ -267,7 +267,7 @@ function trocarImagem(escolha) {
           descrevefigura.innerText="Imagem do Sol na cor branca ";
           break;
         default:
-          urlNova = "Whatsapp Image 2026-09-04 at -09.30.29.jpeg ";
+          urlNova = 'Whatsapp Image 2026-09-04 at -09.30.29.jpeg';
           textoprincipal.innerText="O que é um multiverso?";
           texto.innerText="     um multiverso é tu so que reverso  .";
           descrevefigura.innerText="Figura 1 - exemplo do que é um multiverso. ";
