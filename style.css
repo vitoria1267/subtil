@@ -37,7 +37,7 @@ header{
     justify-content:space-between; /* Título à esquerda e botões à direita */
     align-items:center;            /* Alinha verticalmente */
 
-    background:#9b5bb5;
+    background: "#9b5bb5";
     /* Cor azul do fundo do cabeçalho. */
 
     color:white;
@@ -105,7 +105,7 @@ button{
     border-radius:8px;
     /* Arredonda os cantos do botão. */
 
-    background:#1976D2;
+    background:#a03ec7;
     /* Define a cor azul de fundo do botão. */
 
     color:white;
@@ -119,7 +119,7 @@ button{
 
 button:hover{
 
-    background:#0D47A1;
+    background:#8c1fb8;
     /* Altera a cor do botão quando o usuário passa o mouse,
        fornecendo um retorno visual da interação. */
 
